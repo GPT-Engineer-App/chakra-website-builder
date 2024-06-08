@@ -54,7 +54,7 @@ const Index = () => {
         </Box>
       </VStack>
 
-      <Box position="absolute" top={4} right={4} w="300px" bg="white" p={4} borderRadius="md" boxShadow="sm">
+      <Box position={{ base: "fixed", md: "fixed" }} top={{ base: 2, md: 4 }} right={{ base: 2, md: 4 }} w={{ base: "90%", md: "300px" }} bg="white" p={4} borderRadius="md" boxShadow="sm">
         <Flex align="center" mb={4}>
           <Box w="40px" h="40px" bg="gray.100" borderRadius="full" mr={2}></Box>
           <Box>
