@@ -63,7 +63,7 @@ const Index = () => {
           borderRadius="md"
           boxShadow="sm"
           className="css-1c2auwj"
-          style={{ position: { base: "relative", md: "fixed" }, top: 0, right: 0, zIndex: 1000 }}
+          style={{ position: "fixed", top: 0, right: 0, zIndex: 1000 }}
         >
           <Flex align="center" mb={4}>
             <Box w="40px" h="40px" bg="gray.100" borderRadius="full" mr={2}></Box>
