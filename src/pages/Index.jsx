@@ -56,8 +56,8 @@ const Index = () => {
 
       <Box
         position="fixed"
-        top={{ base: 0, md: 0 }}
-        right={{ base: 0, md: 0 }}
+        top={0}
+        right={0}
         w={{ base: "100%", md: "30%" }}
         h="100vh"
         bg="white"
@@ -65,6 +65,7 @@ const Index = () => {
         borderRadius="md"
         boxShadow="sm"
         className="css-1c2auwj"
+        style={{ zIndex: 1000 }}
       >
         <Flex align="center" mb={4}>
           <Box w="40px" h="40px" bg="gray.100" borderRadius="full" mr={2}></Box>
