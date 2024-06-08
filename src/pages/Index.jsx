@@ -17,8 +17,8 @@ const Index = () => {
         </HStack>
       </Flex>
 
-      <Flex direction={{ base: "column", md: "row" }} align="flex-start" wrap="nowrap" justify="space-between">
-        <VStack spacing={4} align="stretch" flex="1" w={{ base: "100%", md: "70%" }} mr={{ base: 0, md: 4 }} mb={{ base: 4, md: 0 }}>
+      <Flex direction={{ base: "column", md: "row" }} align="flex-start" wrap="nowrap" justify="space-between" w="100%">
+        <VStack spacing={4} align="stretch" flex="1" w={{ base: "100%", md: "70%" }} mr={{ base: 0, md: 4 }} mb={{ base: 4, md: 0 }} order={{ base: 2, md: 1 }}>
           <Box bg="white" p={4} borderRadius="md" boxShadow="sm">
             <Heading size="md" mb={2}>AI Summary</Heading>
             <Box h="100px" bg="gray.100" borderRadius="md"></Box>
@@ -64,6 +64,7 @@ const Index = () => {
           boxShadow="sm"
           className="css-1c2auwj"
           style={{ position: "sticky", top: 0, right: 0, zIndex: 1000 }}
+          order={{ base: 1, md: 2 }}
         >
           <Flex align="center" mb={4}>
             <Box w="40px" h="40px" bg="gray.100" borderRadius="full" mr={2}></Box>
