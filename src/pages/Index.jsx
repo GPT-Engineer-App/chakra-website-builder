@@ -17,8 +17,8 @@ const Index = () => {
         </HStack>
       </Flex>
 
-      <Flex>
-        <VStack spacing={4} align="stretch" flex="1">
+      <Flex direction={{ base: "column", md: "row" }} align="flex-start">
+        <VStack spacing={4} align="stretch" flex="1" w={{ base: "100%", md: "70%" }}>
           <Box bg="white" p={4} borderRadius="md" boxShadow="sm">
             <Heading size="md" mb={2}>AI Summary</Heading>
             <Box h="100px" bg="gray.100" borderRadius="md"></Box>
@@ -57,13 +57,13 @@ const Index = () => {
 
         <Box
           w={{ base: "100%", md: "30%" }}
-          h="100vh"
+          h={{ base: "auto", md: "100vh" }}
           bg="white"
           p={4}
           borderRadius="md"
           boxShadow="sm"
           className="css-1c2auwj"
-          style={{ position: "fixed", top: 0, right: 0, zIndex: 1000 }}
+          style={{ position: { base: "relative", md: "fixed" }, top: 0, right: 0, zIndex: 1000 }}
         >
           <Flex align="center" mb={4}>
             <Box w="40px" h="40px" bg="gray.100" borderRadius="full" mr={2}></Box>
